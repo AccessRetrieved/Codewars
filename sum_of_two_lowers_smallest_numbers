@@ -1,0 +1,10 @@
+def sum_two_smallest_numbers(numbers):
+    small1 = min(numbers)
+    numbers.remove(small1)
+
+    small2 = min(numbers)
+    numbers.remove(small2)
+
+    return small1 + small2
+
+print(sum_two_smallest_numbers([19, 5, 42, 2, 77]))
